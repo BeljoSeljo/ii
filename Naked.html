@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Naked</title>
+<link rel="icon" type="image/x-icon" href="logo.jpg">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{margin:0px;}
+ul {
+  list-style-type: none; /* miče bullets */
+  margin: 0; /*iz nekog razloga ima prostora oko navbara*/
+  padding: 0;
+  overflow: hidden; /*da makne tekst/croppa ako ide izvan okvira*/
+  background-color: #333;
+  top:0;
+  width:100%;
+}
+
+li {
+  float: left;
+}
+
+li a, .yamaha{
+  display: inline-block; /*kao da bude nekakav veći blok*/
+  color: red;
+  text-allign: center; /*txt u sredini*/
+  padding: 20px;
+  font-size: 18px;
+  font-family: "Monaco", "Courier New", monospace;
+  cursor: grab;
+  text-decoration: none; /*da ne budu linije ispod teksta*/
+}
+
+li a:hover, .dpdwn:hover .yamaha{
+  background-color: #5b5b5b;
+}
+
+li.dpdwn {
+  display: inline-block
+}
+
+.sadržaj{
+  display: none; /*da ovo u dropdownu ne bude vidljivo cijelo vrijeme*/
+  position: absolute; /*da box bude zadane veličine*/
+  background-color: red;
+  width: 220px;
+  z-index: 1; /*da dropdwn content bude ispred slike ili čega god*/
+}
+
+.sadržaj a{
+  color: black;
+  padding: 10px 14px;
+  display: block;
+  text-align: center;
+  cursor: grab;
+  text-decoration: none;
+}
+.dpdwn-img{
+  display: none;
+  position: absolute;
+  backround-color: white;
+  width: 90px;
+  z-index: 1;
+}
+
+.dpdwn-img a:hover {
+  background-color: #5b5b5b;
+}
+.sadržaj a:hover {
+  background-color: #5b5b5b;
+}
+
+.dpdwn:hover .sadržaj {
+  display: block;
+}
+.dpdwn:hover .dpdwn-img{
+  display: block;
+}
+.trenutnastr{
+background-color: red;
+color: black;
+}
+
+.prvi-treći{
+background-color: #333; 
+font-size: 18px; 
+text-align:left; 
+color: #C24641;
+padding:20px;
+margin:30px;
+}
+
+.drugi{
+background-color: #C24641; 
+font-size: 18px; 
+text-align:left;
+padding:20px;
+margin:30px;
+}
+
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slike{
+  width: 33%;
+  float: left;
+}
+
+.slike img{
+}
+
+.naslov{
+  font-size:14px;
+}
+
+@media only screen and (max-width: 600px){
+  .prvi-treći{ 
+    font-size: 10px;
+    }
+  .drugi{ 
+    font-size: 10px;
+    }
+  .naslov{
+    font-size:9px;
+}
+  .slike{
+    width: 65%;
+    float: none;
+    align-items: center;
+    }
+  .slike img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+}
+
+@media only screen and (max-width: 900px){
+  .prvi-treći{ 
+    font-size: 12px;
+    }
+  .drugi{ 
+    font-size: 12px;
+    }
+  .naslov{
+    font-size: 11px;
+}
+  .slike{
+    width: 40%;
+    }
+}
+
+}
+</style>
+</head>
+
+
+<body style = "background-color: #d3d3d3; font-family: Monaco, Courier New, monospace; font-size: 20px; color: black; text-align:center; text-decoration:none;">
+<ul>
+  <li><a href="index.html"><b>Home</b></a></li>
+  <li class= "dpdwn"> 
+  <a class= "trenutnastr" href="javascript:void(0)" class= "yamaha"><b>Motori</b></a>
+    <div class= "sadržaj">
+      <a href="Heritage.html"><b>Sport Heritage</b></a>
+      <a href="Sport.html"><b>Supersport</b></a>
+      <a href="Naked.html"><b>Hyper Naked</b></a>
+      <a href="Motocross.html"><b>Minicross</b></a>
+      <a href="Touring.html"><b>Adventure Touring</b></a> 
+    </div>
+  <li class= "dpdwn">
+  <a href="Yamaha.html" class= "yamaha"><b>Info</b></a>
+    <div class= "dpdwn-img">
+     <img src= "Yamaha-Logo.png" alt= "slika nije dostupna" width= 180%>
+    </div>
+  </li>
+</ul>
+
+<div class="naslov"><center><h1>Hyper Naked</h1></center></div>
+<div class="prvi-treći">
+  <center><h2>MT-10 - Specifikacije</h2></center>
+    <img class="slike" src= "https://dd5394a0b8ca8e97ba29-abf76f3d91a2125517d6c7c409f095c7.ssl.cf1.rackcdn.com/content/common/Models/2023/3c4927a1-d037-4ab3-ad55-6a3b562a025c.png" alt= "random">
+  <p>
+    <b>Agregat:</b> 4-takta, 4-cilindra
+  </p>
+  <p><b>Zapremnina:</b> 998 ccm</p>
+  <p><b>Maksimalna snaga:</b> 122,0 kW</p>
+  <p><b>Tip kvačila:</b> Mokro, Višestruki diskovi</p>
+  <p><b>Sustav paljenja:</b> Electronic ignition (TCI)</p>
+  <p><b>Sustav prijenosa:</b> Stalan otvor, 6-brzinski</p>
+  <p><b>Rasplinjač:</b> Elektronično ubrizgavanje goriva</p>
+  <p><b>Maksimalni okretni moment:</b> 112,0 N-m, 9000 o, min</p>
+</div>
+
+<div class="drugi">
+  <div style= "text-align:center;"><h2>MT-09 - Specifikacije</h2></div>
+  <img class="slike" src= "https://dd5394a0b8ca8e97ba29-abf76f3d91a2125517d6c7c409f095c7.ssl.cf1.rackcdn.com/content/common/Models/2023/f375b1dc-cd48-4c48-b201-33f81c4c66e4.png" alt= "random">
+  <p>    
+    <b>Agregat:</b> 4-takta, 4-ventila, 3-cilindra
+  </p>
+  <p><b>Zapremnina:</b> 890 ccm</p>
+  <p><b>Maksimalna snaga:</b> 87,5 kW</p>
+  <p><b>Tip kvačila:</b> Mokro, Višestruki diskovi</p>
+  <p><b>Sustav paljenja:</b> Electronic ignition (TCI)</p>
+  <p><b>Sustav prijenosa:</b> Stalan otvor, 6-brzinski</p>
+  <p><b>Rasplinjač:</b> Ubrizgavanje goriva</p>
+  <p><b>Maksimalni okretni moment:</b> 93,0 N-m, 7000 o, min</p>
+</div>
+
+<div class="prvi-treći">
+  <center><h2>MT-07 - Specifikacije</h2></center>
+    <img class="slike" src= "https://dd5394a0b8ca8e97ba29-abf76f3d91a2125517d6c7c409f095c7.ssl.cf1.rackcdn.com/content/common/Models/2023/adaa9b8f-d9a3-4f87-be6c-47d523493fac.png" alt= "random"> 
+    <b>Agregat:</b> 4-takta, 4-ventila, 2-cilindra
+  </p>
+  <p><b>Zapremnina:</b> 689 ccm</p>
+  <p><b>Maksimalna snaga:</b> 54,0 kW</p>
+  <p><b>Tip kvačila:</b> Mokro, Višestruki diskovi</p>
+  <p><b>Sustav paljenja:</b> Electronic ignition (TCI)</p>
+  <p><b>Sustav prijenosa:</b> Stalan otvor, 6-brzinski</p>
+  <p><b>Rasplinjač:</b> Ubrizgavanje goriva</p>
+  <p><b>Maksimalni okretni moment:</b> 67,0 N-m, 6500 o, min</p>
+</div>
+</body>
+
+</html>
+/*da idem lijevo/desno*/

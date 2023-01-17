@@ -1,0 +1,116 @@
+<html>
+<head>
+<title>Yamaha</title>
+<link rel="icon" type="image/x-icon" href="logo.jpg">
+<style>
+body{margin:0px;}
+ul {
+  list-style-type: none; /* miče bullets */
+  margin: 0; /*iz nekog razloga ima prostora oko navbara*/
+  padding: 0;
+  overflow: hidden; /*da makne tekst/croppa ako ide izvan okvira*/
+  background-color: #333;
+  top:0;
+  width:100%;
+}
+
+li {
+  float: left;
+}
+
+li a, .yamaha{
+  display: inline-block; /*kao da bude nekakav veći blok*/
+  color: red;
+  text-allign: center; /*txt u sredini*/
+  padding: 20px;
+  font-size: 18px;
+  font-family: "Monaco", "Courier New", monospace;
+  cursor: grab;
+  text-decoration: none; /*da ne budu linije ispod teksta*/
+}
+
+li a:hover, .dpdwn:hover .yamaha{
+  background-color: #5b5b5b;
+}
+
+li.dpdwn {
+  display: inline-block
+}
+
+.sadržaj{
+  display: none; /*da ovo u dropdownu ne bude vidljivo cijelo vrijeme*/
+  position: absolute; /*da box bude zadane veličine*/
+  background-color: red;
+  width: 220px;
+  z-index: 1; /*da dropdwn content bude ispred slike ili čega god*/
+}
+
+.sadržaj a{
+  color: black;
+  padding: 10px 14px;
+  display: block;
+  text-align: center;
+  cursor: grab;
+  text-decoration: none;
+}
+
+.sadržaj a:hover {
+  background-color: #5b5b5b;
+}
+
+.dpdwn:hover .sadržaj {
+  display: block;
+}
+
+.dpdwn-img{
+  display: none;
+  position: absolute;
+  backround-color: white;
+  width: 90px;
+  z-index: 1;
+}
+
+.dpdwn-img a:hover {
+  background-color: #5b5b5b;
+}
+
+.dpdwn:hover .dpdwn-img{
+  display: block;
+}
+
+.trenutnastr{
+background-color: red;
+color: black;
+}
+</style>
+</head>
+
+
+<body style = "background-color: #d3d3d3; font-family: Monaco, Courier New, monospace; font-size: 14px; color: black; text-align:center; text-decoration:none;">
+<ul>
+  <li><a href="index.html"><b>Home</b></a></li>
+  <li class="dpdwn"> 
+  <a href="javascript:void(0)" class="yamaha"><b>Motori</b></a>
+    <div class="sadržaj">
+      <a href="Heritage.html"><b>Sport Heritage</b></a>
+      <a href="Sport.html"><b>Supersport</b></a>
+      <a href="Naked.html"><b>Hyper Naked</b></a>
+      <a href="Motocross.html"><b>Minicross</b></a>
+      <a href="Touring.html"><b>Adventure Touring</b></a>
+    </div>
+  <li class= "dpdwn">
+  <a class= trenutnastr href="Yamaha.html" class= "yamaha"><b>Info</b></a>
+    <div class= "dpdwn-img">
+     <img src= "Yamaha-Logo.png" alt= "slika nije dostupna" width= 180%>
+    </div>
+  </li>
+</ul>
+
+<div style= "background-color:red">
+</div>
+</body>
+
+</html>
+/*slika koje otkrio i opisujes*/
+/*slike prvog motora*/
+/*razvoj*/
